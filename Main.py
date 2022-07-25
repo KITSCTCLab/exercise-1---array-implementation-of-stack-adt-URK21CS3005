@@ -21,7 +21,7 @@ class Stack:
             self.items.pop()
 
     def status(self):
-        for i in range(self.items):
+        for i in self.items:
             print(i)
 
 # Do not change the following code
