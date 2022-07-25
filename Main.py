@@ -24,7 +24,8 @@ class Stack:
             self.top-=1
 
     def status(self):
-        # Write code here
+        for i in range(self.to+1):
+            print(self.items[i])
 
 # Do not change the following code
 size, queries = map(int, input().rstrip().split())
