@@ -3,9 +3,10 @@ class Stack:
     def __init__(self, size):
         self.items = []
         self.size = size
+        self.top=-1
 
     def is_empty(self):
-        self.top=-1
+        
         return self.top==-1
 
     def is_full(self):
@@ -24,7 +25,7 @@ class Stack:
             self.top-=1
 
     def status(self):
-        for i in range(self.to+1):
+        for i in range(self.top+1):
             print(self.items[i])
 
 # Do not change the following code
